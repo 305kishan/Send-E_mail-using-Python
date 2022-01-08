@@ -1,12 +1,11 @@
-###PYTHON PROGRAM TO SEND AN EMAIL USING SMTP LIB
-
+#Importing SMTP Library
 import smtplib
 
 smtp = smtplib.SMTP('smtp.gmail.com',587)
 
 smtp.starttls()
 
-smtp.login("Enter your sender's email Id","sender's password")
+smtp.login("Enter your email Id","Enter your password")
 
 message = input("Enter your Message here")
 
